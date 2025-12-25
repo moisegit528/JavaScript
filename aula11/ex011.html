@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 11</title>
+</head>
+<body>
+    <h1>Descobrir Nacionalidade</h1>
+    Qual pais você nasceu? <input type="text" name="usuario" id="usuario">
+    <input type="button" value="Verificar" onclick="descobrir()">
+    <div id="res"></div>
+
+    <script>
+        function descobrir(){
+        var pais = document.querySelector('#usuario')
+        var res = document.querySelector('#res')
+        var decisao = pais.value
+        res.innerHTML = `<p>Você está vivendo no País <strong>${decisao}</strong> que legal!</p>`
+        if (decisao == 'Brasil'){
+           res.innerHTML += `<p>Você é Brasileiro!</p>`
+        }else{
+            res.innerHTML += `<p>Você é estrangeiro!</p>`
+        }
+        }
+    </script>
+</body>
+</html>

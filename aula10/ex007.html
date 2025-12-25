@@ -13,13 +13,14 @@
     <div id="res">Resultado</div>
     <script>
         function somar(){
-            var number1 = window.document.querySelector('num1')
-            var number2 = window.document.querySelector('num2')
-            var res = window.document.querySelector('res')
+            var number1 = document.querySelector('#num1')
+            var number2 = document.querySelector('#num2')
+            var resultado = document.querySelector('#res')
+
             var n1 = Number(number1.value)
             var n2 = Number(number2.value)
             var s = n1 + n2
-            res.innerHTML = 'A soma entre ${n1} e ${n2} é igual a ${s}'
+            resultado.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
         }
     </script>
 
