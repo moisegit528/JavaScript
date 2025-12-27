@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+body{
+    background-color: rgba(70, 142, 236);
+
+}
+
+section{
+    background-color: white;
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 350px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+}
+section div#texto{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+section div#img{
+    background-image: url(imagens/manhã.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    margin: auto;
+    width: 70%;
+    min-height: 70%;
+    border-radius: 100%;
+}
+
+footer{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
